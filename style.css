@@ -56,7 +56,7 @@ html, body {
   width: 300px;
   height: 100px;
   background: #272727;
-  border-radius: 10px;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
   margin-top: 20px;
@@ -108,7 +108,7 @@ html, body {
 }
 
 /* flipswitch */
-.switch {
+.switchContainer .switch {
   vertical-align: middle;
   position: relative;
   width: 57px;
@@ -116,14 +116,14 @@ html, body {
 }
 
 
-.switch input {
+.switchContainer .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
 
-    .slider {
+.switchContainer .slider {
       position: absolute;
       cursor: pointer;
       top: 0;
@@ -136,7 +136,7 @@ html, body {
       border-radius: 40px;
     }
 
-    .slider:before {
+    .switchContainer .slider:before {
       position: absolute;
       content: "";
       height: 26px;
@@ -149,21 +149,21 @@ html, body {
       border-radius: 50%;
     }
 
-    input:checked + .slider {
+    .switchContainer input:checked + .slider {
       background-color: rgba(0, 0, 0, .7);
     }
 
-    input:focus + .slider {
+    .switchContainer input:focus + .slider {
       box-shadow: 0 0 1px rgba(0, 0, 0, .9);
     }
 
-    input:checked + .slider:before {
+    .switchContainer input:checked + .slider:before {
       -webkit-transform: translateX(26px);
       -ms-transform: translateX(26px);
       transform: translateX(26px);
       background-color:#fff;
     }
-
+/* END flipswitch */
 
 .lightBrightness {
   position: absolute;
@@ -184,8 +184,8 @@ html, body {
   animation: load 1.5s normal forwards;
   box-shadow: 0 10px 40px -10px rgba(255,255,255,0.2);
   border-radius: 100px;
-  background: rgba(255,255,255,0.4);;
-  height: 15px;
+  background: rgba(255,255,255,0.4);
+  height: 16px;
   width: 0;
 }
 
@@ -193,6 +193,67 @@ html, body {
   0% { width: 0; }
   100% { width: 80%; }
 }
+
+/* Light intensity slider */
+.slideContainer {
+  position: absolute;
+  bottom: -5px;
+  left:0;
+  width: 100%; 
+}
+
+  .slideContainer .slider{
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 100%; 
+    height: 16px; 
+    background: rgba(255,255,255,0.1);
+    outline: none; 
+    border-radius: 50px;
+  }
+
+/*Chrome light intensity slider*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    position: relative;
+      overflow: hidden;
+      -webkit-appearance: none;
+    }
+    
+  input[type='range']::-webkit-slider-runnable-track {
+      height: 16px;
+      -webkit-appearance: none;
+      margin-top: 0;
+      border-radius: 50px;
+    }
+    
+  input[type='range']::-webkit-slider-thumb {
+      width: 16px;
+      -webkit-appearance: none;
+      height: 16px;
+      cursor: ew-resize;
+      background: rgba(255,255,255,0.6);
+      border-radius: 50%;
+      box-shadow: -180px 0 0 172px rgba(255,255,255,0.4);
+    }
+}
+  /* FF Light intensity slider */
+input[type="range"]::-moz-range-progress {
+  background-color: rgba(255,255,255,0.4); 
+  height: 16px;
+}
+input[type="range"]::-moz-range-track {  
+  background-color: rgba(255,255,255,0);
+}
+/* IE Light intensity slider*/
+input[type="range"]::-ms-fill-lower {
+  background-color: rgba(255,255,255,0.4); 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: rgba(255,255,255,0);
+}
+/* END Light intensity slider */
+
 
 @media screen and (max-width: 750px) {
   .lightcontainer{
