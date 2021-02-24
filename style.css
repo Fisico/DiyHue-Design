@@ -162,12 +162,12 @@ html, body {
   margin: 10px;
 }
 
-.lightContainer.cyan{
+.lightContainer.cyan, .groupContainer.cyan{
   background: rgb(60,60,60);
   background: linear-gradient(90deg, rgba(39, 39, 39,1) 0%, rgba(36,224,250,1) 100%);
 }
 
-.lightContainer.magenta{
+.lightContainer.magenta, .groupContainer.magenta{
   background: rgb(60,60,60);
   background: linear-gradient(90deg, rgba(39, 39, 39,1) 0%, rgba(250,36,231,1) 100%);  
 }
@@ -205,6 +205,41 @@ html, body {
  line-height: 100px;
  margin: 0 15px 0 0;
 }
+
+.groupContainer .expandBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+
+/*Modal Styling*/
+.modal-content.override{
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 15px;
+  color: #eee;
+  border:none;
+}
+
+.modal-header.override{
+  border-bottom: none;
+  padding: 25px;
+}
+
+.modal-body.override{
+  padding-top: 0;
+
+}
+
+.modal.content .lightContainer{
+
+}
+
+/*END Modal Styling*/
+
 
 /* flipswitch */
 .switchContainer .switch {
