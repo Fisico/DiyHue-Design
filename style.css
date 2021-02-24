@@ -58,14 +58,12 @@ html, body {
   border-bottom-right-radius: 10px;
 }
 
-.content{
 
-}
 
 .lightGrid{
   background: rgba(0, 0, 0, .5);
   border-radius: 15px;
-  margin: 100px;
+  margin: 50px 100px 50px 100px;
   padding: 40px;
   display: flow-root;
 }
@@ -283,12 +281,16 @@ input[type="range"]::-ms-fill-upper {
 
 
 @media screen and (max-width: 750px) {
-  .lightcontainer{
+  .lightContainer, .groupContainer{
     width: 100%;
     margin-top: 5px;
   }
   .lightGrid{
     margin: 0;
-    padding: 0;
+    padding: 10px 20px 0 0;
+  }
+  .content{
+    width:100%;
+
   }
 }
