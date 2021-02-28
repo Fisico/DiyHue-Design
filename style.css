@@ -21,7 +21,7 @@ html, body {
   background-color: rgba(0, 0, 0, .7);
 }
 
-.content h1{
+h1.loginheadline{
   color: #fff;
   text-align: center;
   margin-top: 10vh;
@@ -43,9 +43,10 @@ html, body {
 }
 
 
-.contentContainer h1{
+h1.contentheader{
   margin-bottom: 30px;
   margin-top: 0;
+  font-weight: 200;
 }
 
 .contentContainer .dark{
