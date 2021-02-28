@@ -21,6 +21,34 @@ html, body {
   width: 100%;
 }
 
+
+.contentContainer{
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  margin: 75px 50px 50px 10px;
+  border-radius: 15px;
+  padding: 25px;
+  color: #eee;
+}
+
+
+.contentContainer h1{
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.contentContainer .dark{
+  background-color: #2C2B26;
+  border-color: black;
+}
+
+.contentContainer .dark:focus{
+  border-color: rgba(#0092FF);
+  outline: none;
+  background: #000;
+  box-shadow: none;
+}
+
 .loginContainer{
   margin: auto;
   margin-top: 10vh;
@@ -402,4 +430,9 @@ input[type="range"]::-ms-fill-upper {
     width:100%;
 
   }
+
+  .contentContainer{
+    margin: 0;
+  }
+
 }
