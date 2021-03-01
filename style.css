@@ -225,12 +225,19 @@ h1.contentheader{
 }
 
 .lightContainer .iconContainer i, .groupContainer .iconContainer i {
-  color: #fff;
+  /*color: #fff;*/
   font-size: 30px;
   text-align:center;
   width: 50px;
 }
 
+  .textLight{
+    color:#eee;
+  }
+
+  .textDark{
+    color:#000!important;
+  }
 
 .lightContainer .textContainer, .groupContainer .textContainer{
   float: left;
@@ -239,7 +246,6 @@ h1.contentheader{
 }
 
 .lightContainer .textContainer p, .groupContainer .textContainer p{
-  color: #eee;
   line-height: 90px;
   margin: 0;
   
@@ -255,10 +261,28 @@ h1.contentheader{
 .groupContainer .expandBtn{
   position: absolute;
   right: 0;
-  top: 0;
+  top: 0px;
   width: 20px;
   height: 20px;
+  line-height: 20px;
   color: #fff;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.groupContainer .expandBtn:hover{
+  color:#000;
+  background: rgba(255,255,255,0.1);
+}
+
+.groupContainer .expandBtn:focus, .groupContainer .expandBtn:active{
+  color:#000;
+  background: rgba(255,255,255,0.2);
+  outline: none;
+  box-shadow: none;
 }
 
 
