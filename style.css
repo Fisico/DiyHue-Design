@@ -413,6 +413,7 @@ h1.contentheader{
       -webkit-appearance: none;
       margin-top: 0;
       border-radius: 50px;
+      
     }
     
   input[type='range']::-webkit-slider-thumb {
@@ -422,6 +423,7 @@ h1.contentheader{
       cursor: ew-resize;
       background: rgba(255,255,255,0.6);
       border-radius: 50%;
+      border: none;
       box-shadow: -210px 0 0 200px rgba(255,255,255,0.4);
     }
 }
