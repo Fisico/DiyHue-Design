@@ -305,7 +305,7 @@ html, body {
 }
 
 .groupContainer.expanded .header .tab svg {
-  color: red;
+  fill: #eee;
   width: 35px;
   height: 35px;
 }
