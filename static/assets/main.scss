@@ -473,6 +473,11 @@ input[type="range"]::-ms-fill-upper {
     width: 100%;
     margin: 5px 0 0 0;
   }
+
+  .groupContainer.expanded{
+    margin-top: 60px;
+  }
+
   .lightGrid{
     margin: 20px 0 0 0;
     padding: 0;
@@ -483,9 +488,11 @@ input[type="range"]::-ms-fill-upper {
     width:100%;
   }
 
-  .contentContainer{
+  .cardGrid{
+    padding: 0;
     margin: 0;
   }
+
 
   .topbar .switchContainer p{
     margin: 2px 15px 0 10px;
