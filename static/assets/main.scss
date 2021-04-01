@@ -277,18 +277,24 @@ html, body {
 
       .header{
         position: absolute;
-        margin-top: -40px;
+        margin-top: -45px;
         width: 100%;
-        height: 30px;
+        height: 40px;
       
         .icon{
           width: 35px;
           height: 35px;
-          line-height:32px;
+          line-height:35px;
           background: rgba(0, 0, 0, .7);
           border-radius: 50%;
           float: left;
           font-size: 18pt;
+          border: 2px solid rgba(0, 0, 0, .7);
+        }
+
+        .icon:hover{
+            background: rgba(85, 85, 85, 0.7);
+            border: 2px solid rgba(85, 85, 85, 0.7);
         }
 
         i{
@@ -309,12 +315,12 @@ html, body {
           margin-left: 10px;
           width: 35px;
           height: 35px;
-          line-height: 29px;
+          line-height: 35px;
           background: rgba(0, 0, 0, .7);
           border-radius: 50%;
           float: right;
           font-size: 13pt;
-          border: 2px solid rgba(0, 0, 0, .7);;
+          border: 2px solid rgba(0, 0, 0, .7);
         }
 
         .tab:hover{
