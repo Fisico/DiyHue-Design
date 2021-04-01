@@ -58,17 +58,26 @@ html, body {
 
 .topbar .switchContainer {
   float: right;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
 }
 
-.topbar p {
+.topbar .switchContainer p {
   float: right;
   color: #eee;
-  margin: 2px 50px 0 10px;
+  margin: 5px 50px 0 70px;
 }
 
-.topbar p .slider {
-  background: rgba(0, 0, 0, 0.9);
+.topbar .switchContainer .slider {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.topbar .switchContainer input:checked + .slider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.topbar .switchContainer input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .topbar .groupToggle {
@@ -99,6 +108,10 @@ html, body {
   padding: 0;
 }
 
+.sidebar ul a {
+  text-decoration: none;
+}
+
 .sidebar ul li {
   list-style: none;
   padding: 15px 15px 15px 40px;
@@ -108,7 +121,7 @@ html, body {
 
 .sidebar ul li:hover {
   background: rgba(0, 0, 0, 0.9);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .sidebar li .fas, .sidebar li .fab {
@@ -301,7 +314,6 @@ html, body {
   position: relative;
   width: 57px;
   height: 30px;
-  background: pink;
 }
 
 .switchContainer .switch input {
