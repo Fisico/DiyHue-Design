@@ -194,8 +194,9 @@ html, body {
 
 .lightContainer .switchContainer, .groupContainer .switchContainer {
   float: right;
-  line-height: 100px;
-  margin: 0 15px 0 0;
+  line-height: 90px;
+  width: 50px;
+  margin: 0 25px 0 0;
 }
 
 /* Overrides */
@@ -234,9 +235,11 @@ html, body {
 .groupContainer.expanded .dimmer {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
-  margin-top: 80px;
+  margin-top: 79px;
   border-radius: 8px;
   padding: 30px 10px 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .groupContainer.expanded .header {
@@ -298,6 +301,7 @@ html, body {
   position: relative;
   width: 57px;
   height: 30px;
+  background: pink;
 }
 
 .switchContainer .switch input {
@@ -317,6 +321,8 @@ html, body {
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 40px;
+  width: 57px;
+  height: 30px;
 }
 
 .switchContainer .slider:before {
